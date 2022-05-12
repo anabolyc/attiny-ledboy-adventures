@@ -19,11 +19,12 @@
     To contact us: ledboy.net
     ledboyconsole@gmail.com
 */
-#include "tinyOLED.h"
-#include "sprites.h"
+#include <Arduino.h>
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
 #include <avr/eeprom.h>
+#include "tinyOLED.h"
+#include "sprites.h"
 
 #if defined(MILLIS_USE_TIMERA0) || defined(MILLIS_USE_TIMERB0)
 #error "This sketch does't use TCA0 nor TCB0 to save flash, select Disabled."
